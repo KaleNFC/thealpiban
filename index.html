@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBAN Bilgileri</title>
+    <title>Yılmaz Alp - IBAN Bilgileri</title>
     <style>
         * {
             box-sizing: border-box;
@@ -29,18 +29,14 @@
             padding: 24px;
             text-align: center;
         }
-        .avatar {
-            width: 80px;
-            height: 80px;
+        .avatar-img {
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            background: #10b981;
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            object-fit: cover;
             margin: 0 auto 16px auto;
+            display: block;
+            border: 3px solid #10b981;
         }
         h1 {
             font-size: 20px;
@@ -106,20 +102,18 @@
 <body>
 
     <div class="card">
-        <!-- İsim Baş Harfleri veya Profil Resmi -->
-        <div class="avatar">YA</div>
+        <!-- Profil Fotoğrafı (GitHub'a yüklediğiniz resim adı) -->
+        <img src="profil.jpg" alt="Yılmaz Alp" class="avatar-img">
         
-        <h1>YILMAZ ALP</h1>
+        <h1>Yılmaz Alp</h1>
         <p class="subtitle">Banka Hesap Bilgileri</p>
 
         <!-- Banka Kartı 1 -->
         <div class="bank-card">
-            <div class="bank-name">Ziraat Bankası</div>
+            <div class="bank-name">HALKBANK</div>
             <div class="iban-number" id="iban1">TR31 0001 2009 6380 0009 0083 38</div>
             <button class="copy-btn" onclick="copyIBAN('iban1')">IBAN'ı Kopyala</button>
         </div>
-
-        <!-- İhtiyaca göre ikinci bankayı ekleyebilirsiniz -->
     </div>
 
     <div id="toast" class="toast">IBAN Panoya Kopyalandı!</div>
