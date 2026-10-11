@@ -23,7 +23,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 16px;
+            padding: 12px;
         }
         .card {
             background: rgba(0, 0, 0, 0.25) !important;
@@ -34,7 +34,7 @@
             border-radius: 24px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 28px 18px;
+            padding: 28px 16px;
             text-align: center;
         }
         h1 {
@@ -53,7 +53,7 @@
             background: rgba(0, 0, 0, 0.3) !important;
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 16px;
-            padding: 18px 14px;
+            padding: 18px 12px;
             text-align: left;
         }
         .bank-name {
@@ -66,15 +66,13 @@
         }
         .iban-number {
             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            /* Ekran genişliğine göre yazıyı esnetir, mobilde tek satıra tam sığdırır */
-            font-size: clamp(11px, 3.6vw, 15px);
+            /* Rakam boyutunu ekran daraldıkça hassas şekilde küçültür, kesinlikle tam sığdırır */
+            font-size: clamp(10px, 3.4vw, 14px);
             font-weight: 600;
             color: #ffffff !important;
-            white-space: nowrap; /* Asla alt satıra geçmesini engeller */
-            overflow: hidden;
-            text-overflow: ellipsis;
+            white-space: nowrap;
             margin-bottom: 18px;
-            letter-spacing: 0.2px;
+            letter-spacing: 0px;
             text-decoration: none !important;
             border-bottom: none !important;
         }
